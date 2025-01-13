@@ -1,7 +1,11 @@
 Started with raspberrypi0w_defconfig
 
-Config:
+Commit- Added WIFI config
   - Target Packages:Hardware handling:Firmware:select brcmfmac-sdio-firmware-rpi-wifi
                    :Networking applications:select iwd
   - Add to overlay: /var/lib/iwd/loveshack.psk
 
+Commit- Added Mosquitto config
+  - Target Packages:Networking applications:select mosquitto
+
+  - Add to overlay: /etc/mosquitto/mosquitto.conf
