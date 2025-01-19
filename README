@@ -9,3 +9,12 @@ Commit- Added Mosquitto config
   - Target Packages:Networking applications:select mosquitto
 
   - Add to overlay: /etc/mosquitto/mosquitto.conf
+  
+Commit- Add OpenSSL
+  - Target Packages:Libaries:Crypto: select opeenssl support (did not fix issue, maybe don't need)
+  - Target Packages:Libraries:Networking: select libcurl AND curl binary (did not fix issue, maybe don't need)
+  - Target packages:Networking applications: select ntp
+
+  - Add to overlay: /usr/bin/server (for now, get weather data and print)
+  - Add to overlay: /etc/ssl/certs/cacert.pem
+  - Add to overlay: /etc/ntp.conf	(gets date/time at bootup)

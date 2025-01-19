@@ -1,0 +1,6 @@
+--2025-01-18 22:17:55--  https://api.openweathermap.org/data/2.5/weather?zip=49085
+Resolving api.openweathermap.org (api.openweathermap.org)... 2604:86c0:3001:30::2, 169.197.141.16
+Connecting to api.openweathermap.org (api.openweathermap.org)|2604:86c0:3001:30::2|:443... connected.
+HTTP request sent, awaiting response... 401 Unauthorized
+
+Username/Password Authentication Failed.

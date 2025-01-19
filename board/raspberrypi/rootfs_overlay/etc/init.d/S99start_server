@@ -1,0 +1,34 @@
+#! /bin/sh
+# /etc/init.d/server
+
+### BEGIN INIT INFO
+# Provides:          server
+# Required-Start:    $remote_fs $syslog $network
+# Required-Stop:     $remote_fs $syslog $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start server
+# Description:       Start/stop server at boot (mqtt, get weather..)
+### END INIT INFO
+
+# If you want a command to always run, put it here
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo "Starting server app"
+    # run application you want to start
+    /usr/bin/server
+    ;;
+  stop)
+    echo "Stopping server app"
+    # kill application you want to stop
+    killall server
+    ;;
+  *)
+    echo "Usage: /etc/init.d/server {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
