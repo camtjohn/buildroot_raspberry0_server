@@ -10,7 +10,7 @@ Commit- Added Mosquitto config
 
   - Add to overlay: /etc/mosquitto/mosquitto.conf
   
-Commit- Add OpenSSL
+Commit- Add ntp (gets data/time), openssl, curl, and server application
   - Target Packages:Libaries:Crypto: select opeenssl support (did not fix issue, maybe don't need)
   - Target Packages:Libraries:Networking: select libcurl AND curl binary (did not fix issue, maybe don't need)
   - Target packages:Networking applications: select ntp
