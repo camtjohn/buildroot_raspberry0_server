@@ -18,3 +18,9 @@ Commit- Add ntp (gets data/time), openssl, curl, and server application
   - Add to overlay: /usr/bin/server (for now, get weather data and print)
   - Add to overlay: /etc/ssl/certs/cacert.pem
   - Add to overlay: /etc/ntp.conf	(gets date/time at bootup)
+  
+Commit- Update server application: sending current and forecast weather to device
+  - No changes to buildroot apart from updating server executable in overlay
+
+Commit- Update server application: send forecast for next 3 days instead of just 1 day
+  - No changes to buildroot apart from updating server executable in overlay
